@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Camping Essentials</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="background-color: #0D2226; color: #FFF;">
+            <div class="container">
+                <h1 class="text-center">Camping Essentials</h1>
+            </div>
+        </div>
+        <!--Main Content Row -->
+        <div class="row">
+            <!--Instructions-->
+            <!--instructions container-->
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><small>You will be given a random number at the start of the game. There are four camping essentials below. By clicking on a camping item you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each item is hidden from you until you click on it. Each time when the game starts, the game will change the values of each item.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scores and Camping Items-->
+        <!--Target Score-->
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Target Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="targetScore"></h3>
+                    </div>
+                </div>
+            </div>
+            <!--Your Score-->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Your Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="yourScore"></h3>
+                    </div>
+                </div>
+            </div>
+            <!--Camping Items-->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Camping Item Selection</h3>
+                    </div>
+                    <div class="panel-body text-center" style="background-color:#77C0B9;">
+                        <img src="bike.png" alt="" id="bike" width="75" height="75">
+                        <img src="mountain.png" alt="" id="mountain" width="75" height="75">
+                        <img src="backpack.png" alt="" id="backpack" width="75" height="75">
+                        <img src="house.png" alt="" id="house" width="75" height="75">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Counters Row-->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Win Count</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="winCount">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Loss Count</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="text-center" id="lossCount">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JQUERY -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+    <!--Main Game Logic-->
+    <script src="logic.js"></script>
+</body>
+</html>
